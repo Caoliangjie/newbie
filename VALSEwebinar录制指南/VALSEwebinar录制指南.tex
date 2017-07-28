@@ -1,4 +1,5 @@
-\documentclass[12pt]{article}
+
+\documentclass[12pt]{ctexart}
 %%---------------------------------------------------------------------
 % packages
 % geometry
@@ -7,7 +8,7 @@
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}  %%如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符。
 \usepackage{xunicode,xltxtra}
-\usepackage[BoldFont,SlantFont,CJKnumber,CJKchecksingle]{xeCJK}  % \CJKnumber{12345}: 一万二千三百四十五
+%\usepackage[BoldFont,SlantFont,CJKnumber,CJKchecksingle]{xeCJK}  % \CJKnumber{12345}: 一万二千三百四十五
 \usepackage{CJKfntef}  %%实现对汉字加点、下划线等。
 \usepackage{pifont}  % \ding{}
 % math
@@ -48,9 +49,9 @@
 % tightly-packed lists
 \usepackage{mdwlist}
 
-\usepackage{styles/iplouccfg}
-\usepackage{styles/zhfontcfg}
-\usepackage{styles/iplouclistings}
+%\usepackage{styles/iplouccfg}
+%\usepackage{styles/zhfontcfg}
+%\usepackage{styles/iplouclistings}
 
 %%---------------------------------------------------------------------
 % settings
@@ -58,7 +59,7 @@
 \geometry{left=2cm,right=1cm,top=2cm,bottom=2cm}  %设置 上、左、下、右 页边距
 \linespread{1.5} %行间距
 % font
-\setCJKmainfont{Adobe Kaiti Std}
+%\setCJKmainfont{Adobe Kaiti Std}
 %\setmainfont[BoldFont=Adobe Garamond Pro Bold]{Apple Garamond}  % 英文字体
 %\setmainfont[BoldFont=Adobe Garamond Pro Bold,SmallCapsFont=Apple Garamond,SmallCapsFeatures={Scale=0.7}]{Apple Garamond}  %%苹果字体没有SmallCaps
 \setCJKmonofont{Adobe Fangsong Std}
@@ -225,26 +226,26 @@
 \section{Camtasia Studio 使用指南}
 \subsection{录制准备工作}
 \begin{enumerate}
-\item 打开Camtasia Studio 软件，选择{\color{blue}{录制屏幕}}选项（如图~\ref{fig:fig1}所示）。
+\item 打开Camtasia Studio 软件，选择{\color{blue}{新建项目}}选项，并点击{\color{blue}{录制}}（如图~\ref{fig:1.PNG}所示）。
     \begin{figure}[!ht]
     \centering
-    \includegraphics[width=3in]{fig1.png}
+    \includegraphics[width=3in]{1.PNG}
     \caption{选择录制屏幕}
-    \label{fig:fig1}
+    \label{fig:1.PNG}
     \end{figure}  
     
-\item 设置录像参数（如图~\ref{fig:fig2}所示），选择区域设置为{\color{blue}{全屏幕}}，录制音频设置为（如图~\ref{fig:fig3}所示）。
+\item 设置录像参数（如图~\ref{fig:2.PNG}所示），选择区域设置为{\color{blue}{全屏}}，录制音频设置为（如图~\ref{fig:03.png}所示）。
     \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{fig2.png}
+    \includegraphics[width=0.5\textwidth]{2.PNG}
     \caption{设置录像参数}
-    \label{fig:fig2}
+    \label{fig:2.PNG}
     \end{figure}  
     \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{fig3.png}
+    \includegraphics[width=0.5\textwidth]{03.png}
     \caption{设置录制音频}
-    \label{fig:fig3}
+    \label{fig:03.png}
     \end{figure}
 \end{enumerate}
 
@@ -252,103 +253,68 @@
 \begin{enumerate}
 \item 点击{\color{blue}{rec}}开始录制。\par
 \item 点击{\color{blue}{F10}}停止录制。\par
-\item 点击{\color{blue}{保存并编辑}}，保存录制文件（xxxx.trec），如图~\ref{fig:fig4}所示。
+\item 系统自动生成并保存录制文件，如图~\ref{fig:3.PNG}所示。
     \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.9\textwidth]{fig4.png}
+    \includegraphics[width=0.9\textwidth]{3.PNG}
     \caption{保存录制文件}
-    \label{fig:fig4}
+    \label{fig:3.PNG}
     \end{figure}
 \end{enumerate}
 
 \subsection{导出mp4文件}\label{sec:daochu}
 \begin{enumerate}
-\item 选择{\color{blue}{编辑尺寸}}，如图~\ref{fig:fig5}所示；选择{\color{blue}{1080p}}，如图~\ref{fig:fig6}所示。\par
+\item 点击右上角{\color{blue}{分享}}，并选择本地文件。如图~\ref{fig:04.jpg}所示；选择{\color{blue}{1080p}}，如图~\ref{fig:05.jpg}所示。\par
     \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.9\textwidth]{fig5.png}
-    \caption{点击编辑尺寸}
-    \label{fig:fig5}
+    \includegraphics[width=0.9\textwidth]{04.jpg}
+    \caption{点击右上角分享按钮}
+    \label{fig:04.jpg}
     \end{figure}
     \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{fig6.png}
+    \includegraphics[width=0.9\textwidth]{05.jpg}
     \caption{选择编辑尺寸}
-    \label{fig:fig6}
+    \label{fig:05.jpg}
     \end{figure}
  %2. 点击{\color{blue}{“文件”-“保存项目”}}，保存xxxx..camproj文件。\par
-\item 点击{\color{blue}{生成与分享}}，如图~\ref{fig:fig7}所示。\par
+ 
+ \item xxxx.mp4文件正在生成如图~\ref{fig:07.jpg}所示。
      \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{fig7.png}
-    \caption{生成mp4文件}
-    \label{fig:fig7}
-    \end{figure}
-\item 选择如图~\ref{fig:fig8}的导出的mp4文件的参数。\par
-     \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{fig8.png}
-    \caption{生成mp4文件的参数}
-    \label{fig:fig8}
-    \end{figure}
-\item 选择如图~\ref{fig:fig9}所示保存mp4文件的输出路径。\par
-     \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{fig9.png}
-    \caption{设置mp4文件的生成路径}
-    \label{fig:fig9}
-    \end{figure}
-\item xxxx.mp4文件正在生成如图~\ref{fig:fig10}所示。
-     \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{fig10.png}
+    \includegraphics[width=0.9\textwidth]{07.jpg}
     \caption{mp4文件生成中}
-    \label{fig:fig10}
+    \label{fig:07.jpg}
+    \end{figure}
+ 
+ 
+\item 点击{\color{blue}{下一步}}，如图~\ref{fig:06.jpg}所示。填写项目名称，以及相关的文件输出路径，并点击{\color{blue}{完成}}。\par
+     \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{06.jpg}
+    \caption{生成mp4文件}
+    \label{fig:06.jpg}
     \end{figure}
 \end{enumerate}
 
+
+
+
 \subsection{裁剪视频}
 \begin{enumerate}
-\item 点击{\color{blue}{导入媒体}}，选择保存的视频文件打开，如图~\ref{fig:addFig1}所示。\par
- \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{addFig1.png}
-    \caption{点击导入媒体按钮}
-    \label{fig:addFig1}
-    \end{figure}
-\item 选择编辑箱中的视频，点击鼠标右键，选择{\color{blue}{添加到时间轴播放}}，如图~\ref{fig:addFig2}所示。\par
- \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{addFig2.png}
-    \caption{点击导入媒体按钮}
-    \label{fig:addFig2}
-    \end{figure}
-\item 点击Camtasia Studio软件右上角的{\color{blue}{裁剪按钮}}，如图~\ref{fig:fig11}所示。\par
+\item 点击Camtasia Studio软件上方的鼠标按钮，如图~\ref{fig:09.jpg}所示。\par
      \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{fig11.png}
-    \caption{点击裁剪按钮}
-    \label{fig:fig11}
+    \includegraphics[width=0.9\textwidth]{09.jpg}
+    \caption{点击编辑按钮}
+    \label{fig:09.jpg}
     \end{figure}
-\item 拖拽视频框的小方块，只留{\color{blue}{ppt部分}}，如图~\ref{fig:fig12}所示。\par
+\item 拖拽视频大小，只留讲者的{\color{blue}{ppt部分}}，使得视频等比例放大(上下不留黑边、左右可有黑边)，并左右移动视频使其处于正中央，可以参考网站已上传裁剪完毕的视频。如图~\ref{fig:10.jpg}大小即可。\par
      \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{fig12.png}
-    \caption{调整视频尺寸大小}
-    \label{fig:fig12}
-    \end{figure}
-\item 再点击右上角的裁剪按钮，拖拽视频框右下角的小圆圈（如图~\ref{fig:fig13}），使得视频等比例放大(上下不留黑边、左右可有黑边)，并左右移动视频使其处于正中央，如图~\ref{fig:fig14}所示。\par
-    \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{fig13.png}
-    \caption{调整视频尺寸大小}
-    \label{fig:fig13}
-    \end{figure}
-         \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{fig14.png}
-    \caption{调整视频尺寸大小}
-    \label{fig:fig14}
+    \includegraphics[width=0.9\textwidth]{10.jpg}
+    \caption{选择合适大小的方框}
+    \label{fig:10.jpg}
     \end{figure}
 \item 按照Subsection~\ref{sec:daochu}导出mp4文件。\\
 {\color{blue}{注}}：原始视频和裁剪后的视频都需要生成及保存。
@@ -358,16 +324,16 @@
 \begin{enumerate}
  \item 未经过裁剪的.mp4文件，命名方式为“VALSE-日期-作者-单位.mp4”，如：
 
-  {\color{blue}VALSE-20160823-常琳-OUC（没有简写就写全称）.mp4 (一位讲者)}  或
+  {\color{blue}VALSE-20170716-姓名-OUC（没有简写就写全称）.mp4 (一位讲者)}  或
 
-  {\color{blue}VALSE-20160823-常琳-OUC-ZihanZhou-PennStateUniversity.mp4 (两位讲者)}
+  {\color{blue}VALSE-20170716-姓名-OUC-ZihanZhou-PennStateUniversity.mp4 (两位讲者)}
 
 如果还不明白可以去vision.ouc.edu.cn上查看命名格式。
  \item 裁剪后的.mp4文件，命名方式为“VALSE-日期-作者-单位-publish.mp4”，如：
 
-  {\color{blue}VALSE-20160823-常琳-OUC-publish.mp4}  或
+  {\color{blue}VALSE-20170716-姓名-OUC-publish.mp4}  或
 
-  {\color{blue}VALSE-20160823-常琳-OUC-ZihanZhou-PennStateUniversity-publish.mp4}
+  {\color{blue}VALSE-20170716-姓名-OUC-ZihanZhou-PennStateUniversity-publish.mp4}
 
 \end{enumerate}
 %----------------------------------------------------------------------------------------------
@@ -381,7 +347,7 @@
 
 {\color{blue}未裁剪过的：}
 
-  ``scp filename zhenghaiyong@211.64.142.66:/fly/download/valse/videos/unedited"
+  ``scp filename zhenghaiyong@211.64.142.66:/fly/download/valse/videos/raw/"
 
 {\color{blue}裁剪过的：}
 
@@ -403,7 +369,7 @@
 
 {\color{blue}未裁剪过的：}
 
-  ``mv /fly/download/valse/videos/unedited/old-filename /fly/download/valse/videos/unedited/new-filename"
+  ``mv /fly/download/valse/videos/unedited/old-filename /fly/download/valse/videos/raw/new-filename"
 
 {\color{blue}裁剪过的：}
 
